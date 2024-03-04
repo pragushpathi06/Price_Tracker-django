@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<form method="POST" action="" >
+    {% csrf_token %}
+    <div style="background-color:  rgba(0, 0, 0, 0.616); border-radius: 10px; padding: 50px;">
+        <center>
+        <p style="font-size: 30px; color: azure;">Are you sure you want to delete the link: <br>"{{object.name}}"?</p>
+        <button type="submit" class="btn btn-danger" style="padding:10px; width: 200px; font-size: 25px">yes</button>
+        </center>
+    </div>
+</form>
+
+{% endblock content %}
